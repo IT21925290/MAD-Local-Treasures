@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".EditProfile">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/profW"
+        android:layout_height="@dimen/profH"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nme"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:hint="@string/name1"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="@dimen/textW"
+        android:layout_height="@dimen/textH"
+        android:hint="@string/mail1"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/psw"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="253dp"
+        android:layout_height="45dp"
+        android:hint="@string/psw1"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:text="@string/save"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="626dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/arrow"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="@dimen/boxW"
+        android:layout_height="@dimen/boxH"
+        app:srcCompat="@drawable/credit_card"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn"
+        android:text="@string/editcard"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name">Name</string>
+    <string name="mail">name@mail.com</string>
+    <string name="cart">Cart</string>
+    <string name="cartt">Cart</string>
+    <string name="feed">Feedbacks</string>
+    <string name="deactivate">Deactivate Profile</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit Profile</string>
+    <string name="deact">Are you sure about the Deactivation?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="nme">Name</string>
+    <string name="emaill">Email address</string>
+    <string name="email">Email Address</string>
+    <string name="name1">Name N.M.</string>
+    <string name="mail1">name@mail.com</string>
+    <string name="psw">Password</string>
+    <string name="psw1">name1234</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profW">155dp</dimen>
+    <dimen name="profH">126dp</dimen>
+    <dimen name="textW">220dp</dimen>
+    <dimen name="textH">49dp</dimen>
+    <dimen name="boxW">77dp</dimen>
+    <dimen name="boxH">44dp</dimen>
+    <dimen name="width">66dp</dimen>
+    <dimen name="height">62dp</dimen>
+    <dimen name="heightH">55dp</dimen>
+</resources>
