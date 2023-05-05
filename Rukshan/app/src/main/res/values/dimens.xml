@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width">463dp</dimen>
+    <dimen name="height">69dp</dimen>
+    <dimen name="w">167dp</dimen>
+    <dimen name="h">42dp</dimen>
+    <dimen name="wWidth">386dp</dimen>
+    <dimen name="hHeight">62dp</dimen>
+    <dimen name="cardW">282dp</dimen>
+    <dimen name="cardH">165dp</dimen>
+</resources>
