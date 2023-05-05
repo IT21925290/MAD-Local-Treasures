@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layoutW">100dp</dimen>
+    <dimen name="layoutH">69dp</dimen>
+    <dimen name="width">300</dimen>
+    <dimen name="btnW">124dp</dimen>
+    <dimen name="btnH">72dp</dimen>
+    <dimen name="boxW">234dp</dimen>
+    <dimen name="boxH">99dp</dimen>
+    <dimen name="searchW">251dp</dimen>
+    <dimen name="searchH">58dp</dimen>
+    <dimen name="boxMarginEnd">160dp</dimen>
+    <dimen name="boxMarginBottom">650dp</dimen>
+    <dimen name="picW">91dp</dimen>
+    <dimen name="picH">92dp</dimen>
+    <dimen name="btonW">57dp</dimen>
+    <dimen name="btonH">43dp</dimen>
+</resources>
