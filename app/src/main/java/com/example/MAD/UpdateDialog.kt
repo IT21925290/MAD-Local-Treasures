@@ -1,11 +1,11 @@
-package com.example.trial
+package com.example.MAD
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class adminUI : AppCompatActivity() {
+class UpdateDialog : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin_ui)
+        setContentView(R.layout.activity_update_dialog)
     }
 }

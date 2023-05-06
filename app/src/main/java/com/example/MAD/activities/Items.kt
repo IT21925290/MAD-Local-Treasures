@@ -1,11 +1,12 @@
-package com.example.trial
+package com.example.MAD.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.MAD.R
 
-class product7 : AppCompatActivity() {
+class Items : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_product7)
+        setContentView(R.layout.activity_items)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.trial
+package com.example.MAD
 
 import org.junit.Test
 

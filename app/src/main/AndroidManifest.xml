@@ -7,42 +7,63 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="MAD"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trial"
         tools:targetApi="31">
         <activity
-            android:name=".product9"
+            android:name=".UpdateDialog"
             android:exported="false" />
         <activity
-            android:name=".product8"
+            android:name=".activities.ProductDetails"
             android:exported="false" />
         <activity
-            android:name=".product7"
+            android:name=".activities.Items"
             android:exported="false" />
         <activity
-            android:name=".product6"
+            android:name=".activities.viewItems"
             android:exported="false" />
         <activity
-            android:name=".product5"
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.product9"
             android:exported="false" />
         <activity
-            android:name=".product4"
+            android:name=".activities.product8"
             android:exported="false" />
         <activity
-            android:name=".product3"
+            android:name=".activities.product7"
             android:exported="false" />
         <activity
-            android:name=".product2"
+            android:name=".activities.product6"
+            android:exported="false" />
+        <activity
+            android:name=".activities.product5"
+            android:exported="false" />
+        <activity
+            android:name=".activities.product4"
+            android:exported="false" />
+        <activity
+            android:name=".activities.product3"
+            android:exported="false" />
+        <activity
+            android:name=".activities.product2"
             android:exported="false" />
         <activity
             android:name=".category_main"
             android:exported="false" />
         <activity
-            android:name=".product"
+            android:name=".activities.product"
             android:exported="false" />
         <activity
-            android:name=".adminUI"
+            android:name=".activities.adminUI"
             android:exported="false" />
         <activity
             android:name=".categoryMain"
@@ -51,7 +72,7 @@
             android:name=".category2"
             android:exported="false" />
         <activity
-            android:name=".categories"
+            android:name=".activities.categories"
             android:exported="false" />
         <activity
             android:name=".login1"
@@ -59,15 +80,6 @@
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
