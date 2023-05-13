@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width">177dp</dimen>
+    <dimen name="height">135dp</dimen>
+    <dimen name="layW">358dp</dimen>
+    <dimen name="layH">29dp</dimen>
+    <dimen name="confirmW">273dp</dimen>
+    <dimen name="confirmH">47dp</dimen>
+    <dimen name="passW">165dp</dimen>
+    <dimen name="passH">159dp</dimen>
+    <dimen name="logoW">298dp</dimen>
+    <dimen name="logoH">235dp</dimen>
+</resources>

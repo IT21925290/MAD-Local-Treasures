@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252698945134",
+    "project_id": "localtreasures-27785",
+    "storage_bucket": "localtreasures-27785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252698945134:android:bbbcc5db62a6901552687f",
+        "android_client_info": {
+          "package_name": "com.example.localtreasures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252698945134-tt4t6gbcks40hpsj9malmk2hqvcurr67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEWxe-EMlF0bev7AcGovw3XbUF50rPgk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252698945134-tt4t6gbcks40hpsj9malmk2hqvcurr67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
