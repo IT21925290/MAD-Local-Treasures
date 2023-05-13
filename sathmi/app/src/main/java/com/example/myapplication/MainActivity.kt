@@ -13,17 +13,25 @@ import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var button2: Button
+    private lateinit var feeds: Button
+    private lateinit var edit:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button2 = findViewById(R.id.button2)
+        feeds = findViewById(R.id.button2)
 
-        button2.setOnClickListener{
-            val intent = Intent(this, Feedback::class.java)
+        feeds.setOnClickListener{
+            val intent = Intent(this, feedback::class.java)
+            startActivity(intent)
+
+        }
+        edit = findViewById(R.id.button5)
+
+        edit.setOnClickListener{
+            val intent = Intent(this, editProfile::class.java)
             startActivity(intent)
 
         }

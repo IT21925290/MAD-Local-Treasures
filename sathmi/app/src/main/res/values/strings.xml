@@ -81,8 +81,12 @@
     <string name="price1" translatable="false">Rs.1660.00</string>
     <string name="price3" translatable="false">Rs.200.00</string>
     <string name="price4" translatable="false">Rs.1860.00</string>
-    <string name="prdd1">Product Name</string>
-    <string name="prdd2">Product Name</string>
-    <string name="viewcart">View Items</string>
-    <string name="prd3">Turmeric</string>
+    <string name="prdd1" translatable="false">Product Name</string>
+    <string name="prdd2" translatable="false">Product Name</string>
+    <string name="viewcart" translatable="false">View Items</string>
+    <string name="prd3" translatable="false">Turmeric</string>
+    <string name="List">Cart Items\n</string>
+    <string name="naame">Name</string>
+    <string name="loading">Loading Data.....</string>
+    <string name="btnView">All Feedbacks\n</string>
 </resources>

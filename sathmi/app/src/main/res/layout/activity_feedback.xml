@@ -10,8 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="37dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-104dp">
+
+        <EditText
+            android:id="@+id/nameFeed"
+            android:layout_width="140dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:hint="@string/naame"
+            android:inputType="text|textShortMessage"
+            android:text="@string/naame"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
             android:id="@+id/textView19"
@@ -116,7 +133,8 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="43dp"
             android:layout_marginBottom="46dp"
-            android:hint="hint"
+            android:autofillHints=""
+            android:hint="@string/ans"
             android:inputType="text|textLongMessage"
             android:text="@string/ans"
             app:layout_constraintBottom_toTopOf="@+id/imageView28"
@@ -126,15 +144,17 @@
 
         <EditText
             android:id="@+id/EditText5"
-            android:layout_width="363dp"
-            android:layout_height="59dp"
+            android:layout_width="339dp"
+            android:layout_height="67dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="44dp"
-            android:hint="hint"
-            android:inputType="text|textShortMessage"
+            android:autofillHints=""
+            android:hint="@string/ans1"
+            android:inputType="number|numberDecimal"
             android:text="@string/ans1"
             app:layout_constraintBottom_toTopOf="@+id/textView19"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -152,6 +172,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/EditText4" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="@color/btn"
+            android:text="@string/btnView"
+            app:layout_constraintBottom_toTopOf="@+id/imageView28"
+            app:layout_constraintEnd_toStartOf="@+id/button6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditText4"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
