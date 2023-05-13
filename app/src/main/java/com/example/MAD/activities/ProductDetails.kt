@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import com.example.MAD.R
 import com.example.MAD.model.ProductModel
 import com.google.firebase.database.FirebaseDatabase
@@ -64,7 +63,7 @@ private fun initView() {
         tvpDesc = findViewById(R.id.tvpDesc)
 
         btnUpdate = findViewById(R.id.btnUpdate)
-        btnDelete = findViewById(R.id.btnDelete)
+        btnDelete = findViewById(R.id.btnAdd)
     }
 
     private fun setValuesToViews() {

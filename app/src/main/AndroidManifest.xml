@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Trial"
         tools:targetApi="31">
         <activity
+            android:name=".activities.ProductDetailsCustomer"
+            android:exported="false" />
+        <activity
             android:name=".UpdateDialog"
             android:exported="false" />
         <activity

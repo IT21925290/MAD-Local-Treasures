@@ -12,18 +12,18 @@ class ProductAdapter (
     private val productList: ArrayList<ProductModel>) :
     RecyclerView.Adapter<ProductAdapter.ViewHolder>() {
 
-        private lateinit var mListener: onItemClickListener
+        private lateinit var mListener: OnItemClickListener
 
-        interface onItemClickListener{
+        interface OnItemClickListener{
             fun onItemClick(position: Int)
         }
 
-        fun setOnItemClickListener(clickListener: onItemClickListener){
+        fun setOnItemClickListener(clickListener: OnItemClickListener){
             mListener = clickListener
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val itemView = LayoutInflater.from(parent.context).inflate(R.layout.items, parent, false)
+            val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_items, parent, false)
             return ViewHolder(itemView, mListener)
         }
 
@@ -36,7 +36,7 @@ class ProductAdapter (
             return productList.size
         }
 
-        class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
+        class ViewHolder( itemView: View , clickListener: OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
             val tvpName : TextView = itemView.findViewById(R.id.tvpName)
 

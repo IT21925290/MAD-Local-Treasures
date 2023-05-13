@@ -10,6 +10,7 @@ import com.example.MAD.R
 class adminUI : AppCompatActivity() {
 
     private lateinit var View: Button
+    private lateinit var AddItems:Button
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,13 @@ class adminUI : AppCompatActivity() {
             val intent = Intent(this, viewItems::class.java)
                 startActivity(intent)
              }
+
+        AddItems = findViewById(R.id.button2)
+
+        AddItems.setOnClickListener{
+            val intent = Intent(this, categories::class.java)
+            startActivity(intent)
+        }
 
         }
 

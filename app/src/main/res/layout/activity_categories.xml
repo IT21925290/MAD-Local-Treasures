@@ -8,108 +8,71 @@
     tools:context=".activities.categories">
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/etpname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="@string/itemName1"
         android:inputType="textPersonName"
-        android:text="@string/AddItems"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etpAmount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/etpAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="153dp"
-        android:ems="10"
-        android:hint="@string/itemName1"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="153dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/priceItm"
         android:inputType="numberDecimal"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDesc"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="153dp"
-        android:ems="10"
-        android:hint="@string/item3"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="366dp"
-        android:layout_height="248dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="23dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="@string/description"
-        android:inputType="textMultiLine"
-        android:singleLine="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+        app:layout_constraintTop_toBottomOf="@+id/etpname" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/addItem"
         android:layout_width="128dp"
         android:layout_height="65dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="140dp"
         android:backgroundTint="#434345"
         android:text="@string/addItem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button5" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="128dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="71dp"
-        android:backgroundTint="#434345"
-        android:text="@string/update"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/etDesc" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpAmount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

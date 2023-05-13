@@ -49,7 +49,7 @@ class viewItems : AppCompatActivity() {
                     val mAdapter = ProductAdapter(productList)
                     productRecyclerView.adapter = mAdapter
 
-                    mAdapter.setOnItemClickListener(object : ProductAdapter.onItemClickListener{
+                    mAdapter.setOnItemClickListener(object : ProductAdapter.OnItemClickListener{
                         override fun onItemClick(position: Int) {
 
                             val intent = Intent(this@viewItems, ProductDetails::class.java)

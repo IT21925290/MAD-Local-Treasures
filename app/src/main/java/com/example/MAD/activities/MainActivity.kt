@@ -3,12 +3,22 @@ package com.example.MAD.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.MAD.R
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.example.MAD.adapters.ProductAdapter
+import com.example.MAD.model.ProductModel
+import com.google.firebase.database.*
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var productRecyclerView: RecyclerView
+    private lateinit var tvLoadingData: TextView
+    private lateinit var productList: ArrayList<ProductModel>
+    private lateinit var dbRef: DatabaseReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,44 +32,58 @@ class MainActivity : AppCompatActivity() {
            startActivity(intent)
        }
 
-        val carrot:ImageView = findViewById(R.id.imageView3)
+        productRecyclerView = findViewById(R.id.rvProduct)
+        productRecyclerView.layoutManager = LinearLayoutManager(this)
+        productRecyclerView.setHasFixedSize(true)
+        tvLoadingData = findViewById(R.id.tvLoadingData)
 
-        carrot.setOnClickListener{
-            val intent = Intent(this, product::class.java)
-            startActivity(intent)
-        }
+        productList = arrayListOf<ProductModel>()
 
-        val leeks:ImageView = findViewById(R.id.imageView16)
+        getProductsData()
+    }
+    private fun getProductsData() {
 
-        leeks.setOnClickListener{
-            val intent = Intent(this, product2::class.java)
-            startActivity(intent)
-        }
-        val turmeric:ImageView = findViewById(R.id.imageView20)
+        productRecyclerView.visibility = View.GONE
+        tvLoadingData.visibility = View.VISIBLE
 
-        turmeric.setOnClickListener{
-            val intent = Intent(this, product4::class.java)
-            startActivity(intent)
-        }
-        val ginger:ImageView = findViewById(R.id.imageView19)
+        dbRef = FirebaseDatabase.getInstance().getReference("Products")
 
-        ginger.setOnClickListener{
-            val intent = Intent(this, product5::class.java)
-            startActivity(intent)
-        }
-        val _b4c845172c02f5e0ca1addee2809247:ImageView = findViewById(R.id.imageView22)
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                productList.clear()
+                if (snapshot.exists()){
+                    for (productSnap in snapshot.children){
+                        val productData = productSnap.getValue(ProductModel::class.java)
+                        productList.add(productData!!)
+                    }
+                    val mAdapter = ProductAdapter(productList)
+                    productRecyclerView.adapter = mAdapter
 
-        _b4c845172c02f5e0ca1addee2809247.setOnClickListener{
-            val intent = Intent(this, product8::class.java)
-            startActivity(intent)
-        }
-        val craft:ImageView = findViewById(R.id.imageView23)
+                    mAdapter.setOnItemClickListener(object : ProductAdapter.OnItemClickListener{
+                        override fun onItemClick(position: Int) {
 
-        craft.setOnClickListener{
-            val intent = Intent(this, product7::class.java)
-            startActivity(intent)
-        }
+                            val intent = Intent(this@MainActivity, ProductDetailsCustomer::class.java)
 
+                            //put extras
+                            intent.putExtra("pId", productList[position].pId)
+                            intent.putExtra("pName", productList[position].pName)
+                            intent.putExtra("pAmount", productList[position].pAmount)
+                            intent.putExtra("pDesc", productList[position].pDesc)
+                            startActivity(intent)
+                        }
+
+                    })
+
+                    productRecyclerView.visibility = View.VISIBLE
+                    tvLoadingData.visibility = View.GONE
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
+    }
 
     }
-}
