@@ -1,74 +1,92 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="name">Name</string>
-    <string name="mail">name@mail.com</string>
-    <string name="cart">Cart</string>
-    <string name="cartt">Cart</string>
-    <string name="feed">Feedbacks</string>
-    <string name="deactivate">Deactivate Profile</string>
-    <string name="logout">Logout</string>
-    <string name="edit">Edit Profile</string>
-    <string name="deact">Are you sure about the Deactivation?</string>
-    <string name="yes">YES</string>
-    <string name="no">NO</string>
-    <string name="nme">Name</string>
-    <string name="emaill">Email address</string>
-    <string name="email">Email Address</string>
-    <string name="name1">Name N.M.</string>
-    <string name="mail1">name@mail.com</string>
-    <string name="psw">Password</string>
-    <string name="psw1">name1234</string>
-    <string name="save">Save</string>
-    <string name="profile">profile</string>
-    <string name="nameee" />
-    <string name="editc">EDIT CARD</string>
-    <string name="pssw">name1234</string>
-    <string name="eeemail">name@mail.com</string>
-    <string name="naaame">Name.M.N.</string>
-    <string name="imageeee">img</string>
-    <string name="carddd">card</string>
-    <string name="carrrrt">YOUR CART\n</string>
-    <string name="prr1">Rs.****.**</string>
-    <string name="prr2">Rs.****.**</string>
-    <string name="prr3">Rs.****.**</string>
-    <string name="tot">Total Amount</string>
-    <string name="topay">To Pay</string>
-    <string name="deli">Delivery Fee</string>
-    <string name="line2">line\n</string>
-    <string name="line1">line</string>
-    <string name="prr4">Rs.****.**</string>
-    <string name="bin1">bin</string>
-    <string name="minus2">minus\n</string>
-    <string name="plus1">plus</string>
-    <string name="line3">line\n</string>
-    <string name="ProducName1">Product Name</string>
-    <string name="bin2">bin</string>
-    <string name="prr5">Rs.****.**</string>
-    <string name="ProductName2">Product Name</string>
-    <string name="minus1">minus</string>
-    <string name="plus2">plus\n</string>
-    <string name="linee2">line\n</string>
-    <string name="checkout">PROCEED TO CHECKOUT</string>
-    <string name="arr1">arrow</string>
-    <string name="tx1">Customer Support</string>
-    <string name="tx2">Transparency</string>
-    <string name="tx3">Speed and Efficiency</string>
-    <string name="tx4">Tell us what can be improved!</string>
-    <string name="tx5">Overall Service</string>
-    <string name="tx6">Are you satisfied with the service?</string>
-    <string name="tx7">Feedback</string>
-    <string name="tx9">Rate Your Experience</string>
-    <string name="box1">box</string>
-    <string name="box2">box</string>
-    <string name="box3">box</string>
-    <string name="box4">box</string>
-    <string name="logo1">logo</string>
-    <string name="arrr2">arrow\n</string>
-    <string name="box5">box\n</string>
-    <string name="mailllll">name@mail.com</string>
-    <string name="pic1">pro</string>
-    <string name="pic2">cart</string>
-    <string name="pic3">feed</string>
-    <string name="pic4">deact</string>
-    <string name="arrrrr1">arrow</string>
+    <string name="app_name" translatable="false">Local Treasures</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="mail" translatable="false">name@mail.com</string>
+    <string name="cart" translatable="false">Cart</string>
+    <string name="cartt" translatable="false">Cart</string>
+    <string name="feed" translatable="false">Feedbacks</string>
+    <string name="deactivate" translatable="false">Deactivate Profile</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="edit" translatable="false">Edit Profile</string>
+    <string name="deact" translatable="false">Are you sure about the Deactivation?</string>
+    <string name="yes" translatable="false">YES</string>
+    <string name="no" translatable="false">NO</string>
+    <string name="nme" translatable="false">Name</string>
+    <string name="emaill" translatable="false">Email address</string>
+    <string name="email" translatable="false">Email Address</string>
+    <string name="name1" translatable="false">Name N.M.</string>
+    <string name="mail1" translatable="false">name@mail.com</string>
+    <string name="psw" translatable="false">Password</string>
+    <string name="psw1" translatable="false">name1234</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="profile" translatable="false">profile</string>
+    <string name="nameee" translatable="false" />
+    <string name="editc" translatable="false">EDIT CARD</string>
+    <string name="pssw" translatable="false">name1234</string>
+    <string name="eeemail" translatable="false">name@mail.com</string>
+    <string name="naaame" translatable="false">Name.M.N.</string>
+    <string name="imageeee" translatable="false">img</string>
+    <string name="carddd" translatable="false">card</string>
+    <string name="carrrrt" translatable="false">YOUR CART\n</string>
+    <string name="prr1" translatable="false">Rs.****.**</string>
+    <string name="prr2" translatable="false">Rs.****.**</string>
+    <string name="prr3" translatable="false">Rs.****.**</string>
+    <string name="tot" translatable="false">Total Amount</string>
+    <string name="topay" translatable="false">To Pay</string>
+    <string name="deli" translatable="false">Delivery Fee</string>
+    <string name="line2" translatable="false">line\n</string>
+    <string name="line1" translatable="false">line</string>
+    <string name="prr4" translatable="false">Rs.****.**</string>
+    <string name="bin1" translatable="false">bin</string>
+    <string name="minus2" translatable="false">minus\n</string>
+    <string name="plus1" translatable="false">plus</string>
+    <string name="line3" translatable="false">line\n</string>
+    <string name="ProducName1" translatable="false">Product Name</string>
+    <string name="bin2" translatable="false">bin</string>
+    <string name="prr5" translatable="false">Rs.****.**</string>
+    <string name="ProductName2" translatable="false">Product Name</string>
+    <string name="minus1" translatable="false">minus</string>
+    <string name="plus2" translatable="false">plus\n</string>
+    <string name="linee2" translatable="false">line\n</string>
+    <string name="checkout" translatable="false">PROCEED TO CHECKOUT</string>
+    <string name="arr1" translatable="false">arrow</string>
+    <string name="tx1" translatable="false">Customer Support</string>
+    <string name="tx2" translatable="false">Transparency</string>
+    <string name="tx3" translatable="false">Speed and Efficiency</string>
+    <string name="tx4" translatable="false">Tell us what can be improved!</string>
+    <string name="tx5" translatable="false">Overall Service</string>
+    <string name="tx6" translatable="false">Are you satisfied with the service?</string>
+    <string name="tx7" translatable="false">Feedback</string>
+    <string name="tx9" translatable="false">Rate Your Experience</string>
+    <string name="box1" translatable="false">box</string>
+    <string name="box2" translatable="false">box</string>
+    <string name="box3" translatable="false">box</string>
+    <string name="box4" translatable="false">box</string>
+    <string name="logo1" translatable="false">logo</string>
+    <string name="arrr2" translatable="false">arrow\n</string>
+    <string name="box5" translatable="false">box\n</string>
+    <string name="mailllll" translatable="false">name@mail.com</string>
+    <string name="pic1" translatable="false">pro</string>
+    <string name="pic2" translatable="false">cart</string>
+    <string name="pic3" translatable="false">feed</string>
+    <string name="pic4" translatable="false">deact</string>
+    <string name="arrrrr1" translatable="false">arrow</string>
+    <string name="ans" translatable="false">Type here</string>
+    <string name="ans1" translatable="false">Out of 5 stars</string>
+    <string name="bttn" translatable="false">Submit</string>
+    <string name="feeds" translatable="false">FEEDBACKS</string>
+    <string name="feedbakkk" translatable="false">FEEDBACK</string>
+    <string name="prd1" translatable="false">Carrot</string>
+    <string name="prd2" translatable="false">Tea Pot Set</string>
+    <string name="price1" translatable="false">Rs.1660.00</string>
+    <string name="price3" translatable="false">Rs.200.00</string>
+    <string name="price4" translatable="false">Rs.1860.00</string>
+    <string name="prdd1" translatable="false">Product Name</string>
+    <string name="prdd2" translatable="false">Product Name</string>
+    <string name="viewcart" translatable="false">View Items</string>
+    <string name="prd3" translatable="false">Turmeric</string>
+    <string name="List">Cart Items\n</string>
+    <string name="naame">Name</string>
+    <string name="loading">Loading Data.....</string>
+    <string name="btnView">All Feedbacks\n</string>
 </resources>
